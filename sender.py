@@ -18,6 +18,6 @@ def Sensor_reading_to_receiver():
   Temp_Output=temp_preprocess(rew_Temp_data)
   print(Temp_Output)
 
-if __name == '__main':
+if __name__ == '__main__':
   Sensor_reading_to_receiver()
   

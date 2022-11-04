@@ -18,3 +18,5 @@ def Sensor_reading_to_receiver():
   Temp_Output=temp_preprocess(rew_Temp_data)
   print(Temp_Output)
   
+Sensor_reading_to_receiver()
+  

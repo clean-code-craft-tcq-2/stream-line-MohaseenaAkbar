@@ -1,5 +1,4 @@
 import sender_stub
-import pandas as pd
 
 def A2D_conversion(raw_data):
   return round(((raw_data*1023)/5),2) #10 bit ADC and 5V system
@@ -13,7 +12,6 @@ def Preprocess(raw_data,Temp_celsius):
   return A2D_Out,Temp_Farenheit
   
 def Sensor_reading_to_receiver(No_of_readings):
-  Sensor_readings=[]
   Current_readings=[]
   Temperature_readings=[]
   for i in range(No_of_readings):
@@ -22,13 +20,13 @@ def Sensor_reading_to_receiver(No_of_readings):
     Current,Temperature=Preprocess(Current_reading,Temp_data)
     Current_readings.append(Current)
     Temperature_readings.append(Temperature)
-    df1 = pd.DataFrame({'Current': Current_readings})
-    df2=  pd.DataFrame({'Temperatue': Temperature_readings})
-    frames = [df1, df2]
-    Sender_out=pd.concat(frames)
-    print(Sender_out)
-  return Sensor_readings
+  return Current_readings,Temperature_readings
+ 
+def print_sensor_readings(Current_readings,Temperature_readings):
+  print("No_of_readings  Current  Temperature")
+  for i in range(len(Current_readings)):
+    print(i+1,Current_readings[i], Temperature_readings[i],sep='\t\t')
 
 if __name__ == '__main__':
-  Sensor_reading_to_receiver(50)
-  
+  Current_readings,Temperature_readings=Sensor_reading_to_receiver(50)
+  print_sensor_readings(Current_readings,Temperature_readings)

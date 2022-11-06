@@ -4,7 +4,7 @@ def A2D_conversion(raw_data):
   return round(((raw_data*1023)/5),2) #10 bit ADC and 5V system
 
 def CelsiustoFarenheit(TempInCelsius):
-  return round(((TempInCelsius*1.8)+32,2))
+  return round(((TempInCelsius*1.8)+32,1))
 
 def Preprocess(raw_data,Temp_celsius):
   A2D_Out=A2D_conversion(raw_data)

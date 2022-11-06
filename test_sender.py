@@ -26,7 +26,7 @@ class sender_test(unittest.TestCase):
   def test_print_sensor_readings(self):
     str= "No_of_readings  Current  Temperature"
     test_readings=[]
-    self.assertTrue(sender.print_sensor_readings(test_readings,test_readings)==str[])
+    self.assertTrue(sender.print_sensor_readings(test_readings,test_readings)==str)
   
   def test_get_Temp_sensor_data(self):
     self.assertTrue(sender_stub.get_Temp_sensor_data()<=50)

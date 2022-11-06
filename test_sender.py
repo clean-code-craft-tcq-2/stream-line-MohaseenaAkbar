@@ -14,6 +14,9 @@ class sender_test(unittest.TestCase):
     self.assertEqual(sender.A2D_conversion(0.1),20,'0')
     self.assertEqual(sender.A2D_conversion(2.5),512,'0')
     self.assertEqual(sender.A2D_conversion(4.9),1003,'0')
+    
+  def test_Sensor_reading_to_receiver(self):
+    self.assertTrue(sender.Sensor_reading_to_receiver(5)<=(5.0,50))
   
   def test_Preprocess(self):
     self.assertEqual(sender.Preprocess(0,0),(0,32.0),'0')

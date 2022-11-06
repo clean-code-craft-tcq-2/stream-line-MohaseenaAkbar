@@ -18,7 +18,7 @@ def Sensor_reading_to_receiver(No_of_readings):
     Current_reading=sender_stub.get_Current_sensor_data()
     Current,Temperature=Preprocess(Current_reading,Temp_data)
     Sensor_readings.append(Current,Temperature)
-    print(Current,Temperature)
+    #print(Current,Temperature)
   return Sensor_readings
 
 if __name__ == '__main__':

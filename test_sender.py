@@ -17,7 +17,7 @@ class sender_test(unittest.TestCase):
   
   def test_Preprocess(self):
     self.assertEqual(sender.Preprocess(0,0),(0,32.0),'0')
-    self.assertEqual(sender.Preprocess(1.2,32),(245,89.6),'0')
+    self.assertEqual(sender.Preprocess(1.2,32),(246,89.6),'0')
     
        
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 import sender_stub
 
 def A2D_conversion(raw_data):
-  return ((raw_data*5)/1024) #10 bit ADC and 5V system
+  return ((raw_data*1023)/5) #10 bit ADC and 5V system
 
 def CelsiustoFarenheit(TempInCelsius):
   return (((TempInCelsius*9)/5)+32)

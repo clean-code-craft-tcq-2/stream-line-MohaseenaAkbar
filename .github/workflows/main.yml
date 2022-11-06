@@ -18,7 +18,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install flake8
-          pip install pandas
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
         run: |
@@ -37,3 +36,10 @@ jobs:
         with:
           name: coverage
           path: ./htmlcov
+          retention-days: 21
+          
+      - run: python sender.py
+      - run: python test_sender.py
+      - name: Command redirection and pipeline
+        run: |
+          python test_sender.py | python test_receiver.py

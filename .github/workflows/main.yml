@@ -41,6 +41,3 @@ jobs:
           
       - run: python sender.py
       - run: python test_sender.py
-      - name: Command redirection and pipeline
-        run: |
-          python test_sender.py | python test_receiver.py

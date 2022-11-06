@@ -2,7 +2,7 @@ import unittest
 import sender
 import sender_stub
 
-class sender_test(unittest.Testcase):
+class sender_test(unittest.TestCase):
   
   def test_CelsiustoFarenheit(self):
     self.assertEqual(sender.CelsiustoFarenheit(50),122.0,'0')

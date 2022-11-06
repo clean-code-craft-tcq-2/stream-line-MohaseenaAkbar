@@ -15,9 +15,9 @@ def Sensor_reading_to_receiver(No_of_readings):
   Sensor_readings=[]
   for i in range(No_of_readings):
     Temp_data=sender_stub.get_Temp_sensor_data()
-    Current_reading=sender_stub.get_Current_sensor_data()
-    Temp_Output=Preprocess(Output_Current,Temp_data)
-    Sensor_readings.append(Output_CurrentTemp_Output)
+    Current=sender_stub.get_Current_sensor_data()
+    Temperature=Preprocess(Current_reading,Temp_data)
+    Sensor_readings.append(Current,Temperature)
     print(Current_reading,Temp_Output)
   return Sensor_readings
 

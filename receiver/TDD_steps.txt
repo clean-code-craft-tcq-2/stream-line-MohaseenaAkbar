@@ -1,1 +1,2 @@
-Step 1 - Write test cases to read data from console
+Step 1 - Write test cases to read_data_from_console
+Step 2 - Add read_data_from_console definition in receiver.py file with some dummy return value to make it compile.

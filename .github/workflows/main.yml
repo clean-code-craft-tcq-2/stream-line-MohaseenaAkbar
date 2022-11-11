@@ -42,7 +42,7 @@ jobs:
       - run: python sender.py
       - run: python test_sender.py
       
-      - run: receiver/python receiver.py
+      - run: python receiver/receiver.py
       - name: Run and collect coverage
         run: |
           coverage run --branch receiver/test_receiver.py
@@ -55,5 +55,5 @@ jobs:
           path: ./htmlcov
           retention-days: 21
           
-      - run: receiver/python receiver.py
-      - run: receiver/python test_receiver.py
+      - run: python receiver/receiver.py
+      - run: python receiver/test_receiver.py

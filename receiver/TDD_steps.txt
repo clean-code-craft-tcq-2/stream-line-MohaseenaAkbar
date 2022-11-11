@@ -1,2 +1,4 @@
 Step 1 - Write test cases to read_data_from_console
 Step 2 - Add read_data_from_console definition in receiver.py file with some dummy return value to make it compile.
+step 3-  Add real functionality inside read_data_from_console. Receiver is not available.Hence stub the receiver input in receiver_stub.py
+step 4 - read the input from stubbed receiver_stub and return number of readings in read_data_from_console API.

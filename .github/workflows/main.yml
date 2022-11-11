@@ -41,3 +41,19 @@ jobs:
           
       - run: python sender.py
       - run: python test_sender.py
+      
+      - run: python receiver.py
+      - name: Run and collect coverage
+        run: |
+          coverage run --branch test_receiver.py
+          coverage html
+          coverage report
+      - name: Upload coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: ./htmlcov
+          retention-days: 21
+          
+      - run: python receiver.py
+      - run: python test_receiver.py

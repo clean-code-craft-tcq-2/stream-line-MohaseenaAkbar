@@ -1,6 +1,6 @@
 import random
 
-def Stub_to_generate_console_output():
+def Console_output():
   No_of_readings=50
   BMS_readings = []
   Temperature = (random.sample(range(0,50),No_of_readings))

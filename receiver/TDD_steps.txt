@@ -3,3 +3,4 @@ Step 2 - Add read_data_from_console definition in receiver.py file with some dum
 step 3-  Add real functionality inside read_data_from_console. Receiver is not available.Hence stub the receiver input in receiver_stub.py
 step 4 - read the input from stubbed receiver_stub and return number of readings in read_data_from_console API.
 step 5 -Console output is stored in list.Now add min and max value test case to find out in list.
+step 6: Add  Find_Min_Max API in receiver.py and return dummy value to make it compile

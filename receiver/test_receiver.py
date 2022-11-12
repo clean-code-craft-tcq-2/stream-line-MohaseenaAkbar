@@ -21,7 +21,9 @@ class receiver_test(unittest.TestCase):
     self.assertTrue(len(receiver_stub.Console_output)==100)
   
   def test_Generate_readings(self):
-    self.assertEqual(len(receiver_stub.Generate_readings(10)),10)
+    temperature,current=receiver_stub.Generate_readings(10)
+    self.assertEqual(len(temperature),10)
+    self.assertEqual(len(current),10)
    
 if __name__ == '__main__':
   unittest.main()

@@ -14,7 +14,18 @@ def Simple_Moving_Average(readings):
   SMA/=5
   return round(SMA,2)
 
-if __name__ == '__main__':
-  BMS_reading=read_data_from_console()
+def Processed_Receiver_output(BMS_reading):
   Min_Value,Max_Value=Find_Min_Max(BMS_reading)
   Moving_Average=Simple_Moving_Average(BMS_reading)
+  return Min_Value,Max_Value,Moving_Average
+
+def Display_receiver_output(Min_Val,Max_Val,Simp_Moving_Avg)
+  print("Minimum value is:",Min_Val)
+  print("Maximum value is:",Max_Val)
+  print("Simple moving average value is:",Simp_Moving_Avg)
+  
+if __name__ == '__main__':
+  BMS_reading=read_data_from_console()
+  Min_Val,Max_Val,Simp_Moving_Avg=Receiver_output(BMS_reading)
+  Display_receiver_output(Min_Val,Max_Val,Simp_Moving_Avg)
+  

@@ -12,6 +12,10 @@ class receiver_test(unittest.TestCase):
     self.assertTrue(Min_Value==2.5)
     self.assertTrue(Max_Value==50.1)
    
+  def test_Simple_Moving_Average(self):
+    Readings=[2.5,8,10,50,49.9,50.1,12,65.5,98,16.8,19,0,22,23.5]
+    self.assertEqual(receiver.Simple_Moving_Average(Readings),16.26)
+   
 if __name__ == '__main__':
   unittest.main()
     

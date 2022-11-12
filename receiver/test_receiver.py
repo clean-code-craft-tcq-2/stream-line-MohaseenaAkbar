@@ -18,7 +18,7 @@ class receiver_test(unittest.TestCase):
     self.assertEqual(receiver.Simple_Moving_Average(Readings),16.26)
    
   def test_Console_output(self):
-    self.assertTrue(len(receiver_stub.Console_output)==100)
+    self.assertTrue(len(receiver_stub.Console_output())==100)
   
   def test_Generate_readings(self):
     temperature,current=receiver_stub.Generate_readings(10)

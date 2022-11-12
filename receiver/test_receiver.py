@@ -1,6 +1,6 @@
 import unittest
 import receiver
-import receiver_Stub
+import receiver_stub
 
 class receiver_test(unittest.TestCase):
    

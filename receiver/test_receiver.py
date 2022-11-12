@@ -20,8 +20,8 @@ class receiver_test(unittest.TestCase):
   def test_Console_output(self):
     self.assertTrue(len(receiver_stub.Console_output)==100)
   
-  def test_Generate_readings(10):
-    self.assertEqual(receiver_stub.Generate_readings,10)
+  def test_Generate_readings(self):
+    self.assertEqual(len(receiver_stub.Generate_readings(10)),10)
    
 if __name__ == '__main__':
   unittest.main()

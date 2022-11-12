@@ -19,7 +19,7 @@ def Processed_Receiver_output(BMS_reading):
   Moving_Average=Simple_Moving_Average(BMS_reading)
   return Min_Value,Max_Value,Moving_Average
 
-def Display_receiver_output(Min_Val,Max_Val,Simp_Moving_Avg)
+def Display_receiver_output(Min_Val,Max_Val,Simp_Moving_Avg):
   print("Minimum value is:",Min_Val)
   print("Maximum value is:",Max_Val)
   print("Simple moving average value is:",Simp_Moving_Avg)

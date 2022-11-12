@@ -1,6 +1,9 @@
 import receiver_stub
 
 def read_data_from_console():
-  return receiver_stub.Console_output();
+  return receiver_stub.Console_output()
+
+def Find_Min_Max(readings):
+  return 10,2
 
 BMS_reading=read_data_from_console()

@@ -20,7 +20,7 @@ class receiver_test(unittest.TestCase):
   
   def test_Processed_Receiver_output(self):
     Readings=[2.5,8,10,50,49.9,50.1,12,65.5,98,16.8,19,20,22,23.5]
-    Simple_Moving_Avg=(16.8+19+20+22+23.5)/5
+    Simple_Moving_Avg=round(((16.8+19+20+22+23.5)/5),2)
     Min_Value,Max_Value,SMA=receiver.Processed_Receiver_output(Readings)
     self.assertTrue(Min_Value==2.5)
     self.assertTrue(Max_Value==98)

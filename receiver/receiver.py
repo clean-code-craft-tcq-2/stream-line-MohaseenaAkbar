@@ -26,6 +26,6 @@ def Display_receiver_output(Min_Val,Max_Val,Simp_Moving_Avg)
   
 if __name__ == '__main__':
   BMS_reading=read_data_from_console()
-  Min_Val,Max_Val,Simp_Moving_Avg=Receiver_output(BMS_reading)
+  Min_Val,Max_Val,Simp_Moving_Avg=Processed_Receiver_output(BMS_reading)
   Display_receiver_output(Min_Val,Max_Val,Simp_Moving_Avg)
   

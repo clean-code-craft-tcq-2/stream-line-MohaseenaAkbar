@@ -8,7 +8,7 @@ def Console_output():
   BMS_readings=Temperature
   return BMS_readings
 
-def Generate_readings(No_of_readings)
+def Generate_readings(No_of_readings):
   Temperature = (random.sample(range(0,50),No_of_readings))
   Current = []
   for i in range(No_of_readings):

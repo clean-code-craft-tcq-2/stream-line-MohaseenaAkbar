@@ -24,7 +24,7 @@ class receiver_test(unittest.TestCase):
     Min_Value,Max_Value,SMA=receiver.Processed_Receiver_output(Readings)
     self.assertTrue(Min_Value==2.5)
     self.assertTrue(Max_Value==98)
-    self.assertTrue(Max_Value==Simple_Moving_Avg)   
+    self.assertTrue(SMA==Simple_Moving_Avg)   
    
   def test_Console_output(self):
     self.assertTrue(len(receiver_stub.Console_output())==100)

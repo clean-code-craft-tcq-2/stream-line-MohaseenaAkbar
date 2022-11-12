@@ -5,7 +5,7 @@ class receiver_test(unittest.TestCase):
 
    
   def test_read_data_from_console(self):
-    self.assertTrue(receiver.len(read_data_from_console())==100)
+    self.assertTrue(len(receiver.read_data_from_console())==100)
       
   def test_Find_Min_Max(self):
     Readings=[2.5,8,10,50,49.9,50.1]

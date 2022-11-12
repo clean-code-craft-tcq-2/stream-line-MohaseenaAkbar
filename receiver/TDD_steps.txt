@@ -5,3 +5,6 @@ step 4 - read the input from stubbed receiver_stub and return number of readings
 step 5 - Console output is stored in list.Now add min and max value test case to find out in list.
 step 6 - Add Find_Min_Max API in receiver.py and return dummy value to make it compile
 step 7 - Add test case for simple moving average
+step 8 - Add Simple_Moving_Average function in receiver.py 
+step 9 - return dummy value Simple_Moving_Average to make it compile
+step 10 -Implement the exact funxtionality in Simple_Moving_Average 

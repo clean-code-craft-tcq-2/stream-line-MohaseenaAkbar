@@ -14,6 +14,7 @@ def Simple_Moving_Average(readings):
   SMA/=5
   return round(SMA,2)
 
-BMS_reading=read_data_from_console()
-Min_Value,Max_Value=Find_Min_Max(BMS_reading)
-Moving_Average=Simple_Moving_Average(BMS_reading)
+if __name__ == '__main__':
+  BMS_reading=read_data_from_console()
+  Min_Value,Max_Value=Find_Min_Max(BMS_reading)
+  Moving_Average=Simple_Moving_Average(BMS_reading)
